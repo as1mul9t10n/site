@@ -1,0 +1,218 @@
+/* FONT */ 
+@font-face{
+	font-family: "Road Rage";
+	src:url("../Font/RocketRinder-yV5d.ttf");
+	font-weight: bold;
+}
+
+/* BASE */ 
+body {
+	margin: 0;
+	font-family: "Road Rage";
+	font-size: 20px;
+	line-height: 1.6;
+	background-color: #31112f;
+	color: #333;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+/* BACK */
+
+.back {
+	text-decoration: none;
+	font-size: 30px;
+	background: linear-gradient(to bottom, #a30fe8, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.back:hover {
+	background: #fff;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Container */ 
+
+.container {
+	width: 100%;
+	max-width: 1700px;
+	margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+	width: 100%;
+	padding-top: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Intro */
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 60vh;
+}
+
+.intro__title {
+	color: #fff;
+	font-size: 70px;
+	font-weight: bold;
+	user-select: none;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+}
+
+.intro__inner {
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+/* TIME */
+
+.countdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.time-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-family: sans-serif;
+	padding: 0 30px;
+	user-select: none;
+}
+
+.count {
+	font-size: 30px;
+	font-family: "Road Rage";
+}
+
+.units {
+	font-size: 20px;
+	font-family: "Road Rage";
+}
+
+/* COPYRIGHT */
+
+.copy {
+	width: 100%;
+	color: #a30fe8;
+	text-align: center;
+	font-size: 22px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	user-select: none;
+}
+
+/* VK */
+
+.vk {
+	color: #a30fe8;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+.vk:hover {
+	color: #fff;
+}
+
+/* SCAN LINE */
+
+.scanlines {
+    position: absolute;
+    pointer-events: none;
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-size: 100% 2px, 3px 100%;
+}
+
+
+.scanline {
+	position: absolute;
+    pointer-events: none;
+    top: 0%;
+    width: auto;
+    min-width: 100%;
+    height: 2px;
+    z-index: 10;
+    background: rgba(0, 0, 0, .3);
+    opacity: 0.75;
+    animation: scanline 7s linear infinite; 
+}
+
+.scanline2 {
+	position: absolute;
+    pointer-events: none;
+    top: 0%;
+    width: auto;
+    min-width: 100%;
+    height: 2px;
+    z-index: 10;
+    background: rgba(0, 0, 0, .3);
+    opacity: 0.75;
+    animation: scanline 5s linear infinite; 
+}
+
+.scanline3 {
+	position: absolute;
+    pointer-events: none;
+    top: 0%;
+    width: auto;
+    min-width: 100%;
+    height: 2px;
+    z-index: 10;
+    background: rgba(0, 0, 0, .3);
+    opacity: 0.75;
+    animation: scanline 3s linear infinite; 
+}
+
+/* FLICKER */ 
+
+.flicker {
+    pointer-events: none;
+    position: absolute;
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.25);
+    animation: flicker 1s infinite;
+}
