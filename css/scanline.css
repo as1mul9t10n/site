@@ -1,0 +1,10 @@
+@keyframes scanline {
+  0% {
+    top:99%;
+  }
+}
+@keyframes scanlines {
+  0% {
+    background-position: 0 50%;
+  }
+}
